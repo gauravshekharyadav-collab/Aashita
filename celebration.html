@@ -54,7 +54,16 @@ body{
 
 <h3>Forever Yours, <br>❤️</h3>
 
-<audio id="bgMusic" autoplay loop>
+<audio id="bgMusic" autoplay loop muted>
+<source src="tera-hasna.mp3" type="audio/mp3">
+</audio>
+<script>
+    window.onload = function(){
+    let music = document.getElementById("bgMusic");
+    music.muted = false;
+    music.play();
+};
+
 <source src="tera-hasna.mp3" type="audio/mp3">
 </audio>
 
@@ -96,5 +105,6 @@ setInterval(function(){
 
 </body>
 </html>
+
 
 
