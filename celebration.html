@@ -2,7 +2,6 @@
 <html>
 <head>
 <title>It's a Date 💖</title>
-
 <style>
 body{
     text-align:center;
@@ -18,6 +17,13 @@ body{
     border-radius:20px;
     margin:20px auto;
     object-fit:cover;
+}
+
+.falling{
+    position:fixed;
+    top:-100px;
+    width:100px;
+    animation:fall linear infinite;
 }
 
 @keyframes fall{
@@ -40,26 +46,28 @@ body{
 <body>
 
 <h1>IT'S A DATE 💘</h1>
-
 <h2>
 Chand, Sitarey, Phool, Parindey,<br>
-Sham, Savera Ek Taraf… 💫
+Sham, Savera Ek Taraf… 💫<br><br>
+Tera Hasna, Teri Baatein,<br>
+Tera Chehra Ek Taraf 💘
 </h2>
 
-<h3>
-Tera Hasna, Teri Baatein,<br>
-Tera Chehra Ek Taraf 💖
-</h3>
 
 <img id="slide" class="slideshow" src="photo1.jpg">
 
-<h3>Forever Yours, <br>❤️</h3>
+<h3>Forever Yours, <br> Gaurav ❤️</h3>
 
-<audio id="bgMusic" autoplay loop>
+<audio id="bgMusic" loop>
 <source src="tera-hasna.mp3" type="audio/mp3">
 </audio>
 
 <script>
+
+// Start music after first click
+document.body.addEventListener("click",function(){
+    document.getElementById("bgMusic").play();
+});
 
 // Slideshow
 let images=["photo1.jpg","photo2.jpg","photo3.jpg","photo4.jpg","photo5.jpg"];
