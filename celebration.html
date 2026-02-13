@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>It's a Date 💖</title>
+
 <style>
 body{
     text-align:center;
@@ -11,20 +12,12 @@ body{
     overflow:hidden;
 }
 
-
 .slideshow{
     width:300px;
     height:400px;
     border-radius:20px;
     margin:20px auto;
     object-fit:cover;
-}
-
-.falling{
-    position:fixed;
-    top:-100px;
-    width:100px;
-    animation:fall linear infinite;
 }
 
 @keyframes fall{
@@ -47,25 +40,26 @@ body{
 <body>
 
 <h1>IT'S A DATE 💘</h1>
-<h2>Chand, Sitarey, Phool, Parindey, Sham, Savera, Ek Taraf,,💖</h2>
-<h3>Tera Hasna, Teri Baatein, Tera Chehra Ek Taraf 💖</h3>
+
+<h2>
+Chand, Sitarey, Phool, Parindey,<br>
+Sham, Savera Ek Taraf… 💫
+</h2>
+
+<h3>
+Tera Hasna, Teri Baatein,<br>
+Tera Chehra Ek Taraf 💖
+</h3>
 
 <img id="slide" class="slideshow" src="photo1.jpg">
 
 <h3>Forever Yours, <br>❤️</h3>
 
-<audio id="bgMusic" autoplay loop muted>
+<audio id="bgMusic" autoplay loop>
 <source src="tera-hasna.mp3" type="audio/mp3">
 </audio>
-<script>
-    window.onload = function(){
-    let music = document.getElementById("bgMusic");
-    music.muted = false;
-    music.play();
-};
 
-<source src="tera-hasna.mp3" type="audio/mp3">
-</audio>
+<script>
 
 // Slideshow
 let images=["photo1.jpg","photo2.jpg","photo3.jpg","photo4.jpg","photo5.jpg"];
@@ -105,6 +99,3 @@ setInterval(function(){
 
 </body>
 </html>
-
-
-
